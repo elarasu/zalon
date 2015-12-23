@@ -7,15 +7,18 @@
 //
 
 import UIKit
+import XCGLogger
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    let log = XCGLogger.defaultInstance()
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        log.setup(.Debug, showLogLevel: true, showFileNames: true, showLineNumbers: true)
         return true
     }
 

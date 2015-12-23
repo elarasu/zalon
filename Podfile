@@ -7,8 +7,15 @@ def import_pods
     # networking
     pod 'Alamofire'
 
+    # database
+    pod 'RealmSwift'
+
+    # Object mapper
+    pod 'ObjectMapper'
+    pod 'AlamofireObjectMapper'
+
     # core libs
-    #pod 'XCGLogger'
+    pod 'XCGLogger'
     #pod 'SwiftyJSON'
     #pod 'SwiftEventBus', :git => 'https://github.com/cesarferreira/SwiftEventBus.git'
     #pod 'JSONSchema'
