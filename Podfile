@@ -16,7 +16,7 @@ def import_pods
 
     # core libs
     pod 'XCGLogger'
-    #pod 'SwiftyJSON'
+    pod 'SwiftyJSON'
     #pod 'SwiftEventBus', :git => 'https://github.com/cesarferreira/SwiftEventBus.git'
     #pod 'JSONSchema'
     #pod 'Async', :git => 'https://github.com/duemunk/Async.git'
@@ -34,7 +34,7 @@ def import_pods
     #pod 'WobbleView'
 
     # misc
-    #pod 'ReachabilitySwift', :git => 'https://github.com/ashleymills/Reachability.swift.git'
+    pod 'ReachabilitySwift', git: 'https://github.com/ashleymills/Reachability.swift'
 end
 
 target 'zalon' do

@@ -9,7 +9,6 @@
 import UIKit
 import XCGLogger
 
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
