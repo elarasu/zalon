@@ -17,8 +17,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        NetworkManager.sharedInstance
+        LocationManager.sharedInstance
+        
         // Do any additional setup after loading the view, typically from a nib.
-        let realm = RLMRealm.defaultRealm()
+        _ = RLMRealm.defaultRealm()
         Alamofire.request(.GET, url).validate().responseJSON { response in
             switch response.result {
             case .Success:

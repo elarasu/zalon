@@ -17,7 +17,7 @@ def import_pods
     # core libs
     pod 'XCGLogger'
     pod 'SwiftyJSON'
-    #pod 'SwiftEventBus', :git => 'https://github.com/cesarferreira/SwiftEventBus.git'
+    pod 'SwiftEventBus', :git => 'https://github.com/cesarferreira/SwiftEventBus.git'
     #pod 'JSONSchema'
     #pod 'Async', :git => 'https://github.com/duemunk/Async.git'
 
@@ -26,10 +26,10 @@ def import_pods
 
     # UI
     #pod 'EAIntroView'
-    #pod 'YALSideMenu'
+    pod 'YALSideMenu'
     #pod 'SwiftForms'
     #pod 'JSQMessagesViewController'
-    #pod 'FontAwesomeKit'
+    pod 'FontAwesomeKit'
     #pod 'SCLAlertView'
     #pod 'WobbleView'
 

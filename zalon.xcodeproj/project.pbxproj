@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		513BB6B41C2B2CA100F76409 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513BB6B31C2B2CA100F76409 /* NetworkManager.swift */; };
+		513BB6B71C2B355000F76409 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513BB6B61C2B355000F76409 /* LocationManager.swift */; };
 		51748CE61C2A28A600635581 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51748CE51C2A28A600635581 /* AppDelegate.swift */; };
 		51748CE81C2A28A600635581 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51748CE71C2A28A600635581 /* ViewController.swift */; };
 		51748CEB1C2A28A600635581 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51748CE91C2A28A600635581 /* Main.storyboard */; };
@@ -14,6 +16,7 @@
 		51748CF01C2A28A600635581 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51748CEE1C2A28A600635581 /* LaunchScreen.storyboard */; };
 		51748CFB1C2A28A600635581 /* zalonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51748CFA1C2A28A600635581 /* zalonTests.swift */; };
 		51748D061C2A28A600635581 /* zalonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51748D051C2A28A600635581 /* zalonUITests.swift */; };
+		5195E9701C2B451000EDAA4C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5195E96F1C2B451000EDAA4C /* MapViewController.swift */; };
 		9C2E46E636FA2FF4FB0E1B1C /* Pods_zalonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4E008904807DE561ACF05C /* Pods_zalonTests.framework */; };
 		BE22E8E52DEC39DDCBE1E167 /* Pods_zalon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6362E05EAD1BD0DC740EAC7E /* Pods_zalon.framework */; };
 /* End PBXBuildFile section */
@@ -38,6 +41,8 @@
 /* Begin PBXFileReference section */
 		2B4E008904807DE561ACF05C /* Pods_zalonTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zalonTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36CDD33AFD05776D5EFEF5D6 /* Pods-zalonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zalonTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-zalonTests/Pods-zalonTests.debug.xcconfig"; sourceTree = "<group>"; };
+		513BB6B31C2B2CA100F76409 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkManager.swift; path = network/NetworkManager.swift; sourceTree = "<group>"; };
+		513BB6B61C2B355000F76409 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationManager.swift; path = location/LocationManager.swift; sourceTree = "<group>"; };
 		51748CE21C2A28A600635581 /* zalon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zalon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51748CE51C2A28A600635581 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51748CE71C2A28A600635581 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +56,7 @@
 		51748D011C2A28A600635581 /* zalonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zalonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		51748D051C2A28A600635581 /* zalonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zalonUITests.swift; sourceTree = "<group>"; };
 		51748D071C2A28A600635581 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5195E96F1C2B451000EDAA4C /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = apps/map/MapViewController.swift; sourceTree = "<group>"; };
 		6362E05EAD1BD0DC740EAC7E /* Pods_zalon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zalon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67C08BA9EEC8B954617D95D0 /* Pods-zalon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zalon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-zalon/Pods-zalon.debug.xcconfig"; sourceTree = "<group>"; };
 		9A02C059352F32731596BBD3 /* Pods-zalonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zalonTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-zalonTests/Pods-zalonTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -84,6 +90,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		513BB6B21C2B2BB900F76409 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				513BB6B31C2B2CA100F76409 /* NetworkManager.swift */,
+			);
+			name = network;
+			sourceTree = "<group>";
+		};
+		513BB6B51C2B353800F76409 /* location */ = {
+			isa = PBXGroup;
+			children = (
+				513BB6B61C2B355000F76409 /* LocationManager.swift */,
+			);
+			name = location;
+			sourceTree = "<group>";
+		};
 		51748CD91C2A28A600635581 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +131,9 @@
 		51748CE41C2A28A600635581 /* zalon */ = {
 			isa = PBXGroup;
 			children = (
+				5195E96D1C2B429600EDAA4C /* apps */,
+				513BB6B51C2B353800F76409 /* location */,
+				513BB6B21C2B2BB900F76409 /* network */,
 				51748CE51C2A28A600635581 /* AppDelegate.swift */,
 				51748CE71C2A28A600635581 /* ViewController.swift */,
 				51748CE91C2A28A600635581 /* Main.storyboard */,
@@ -135,6 +160,22 @@
 				51748D071C2A28A600635581 /* Info.plist */,
 			);
 			path = zalonUITests;
+			sourceTree = "<group>";
+		};
+		5195E96D1C2B429600EDAA4C /* apps */ = {
+			isa = PBXGroup;
+			children = (
+				5195E96E1C2B42A300EDAA4C /* map */,
+			);
+			name = apps;
+			sourceTree = "<group>";
+		};
+		5195E96E1C2B42A300EDAA4C /* map */ = {
+			isa = PBXGroup;
+			children = (
+				5195E96F1C2B451000EDAA4C /* MapViewController.swift */,
+			);
+			name = map;
 			sourceTree = "<group>";
 		};
 		A5D0E50B2FD6759C0A78AFCD /* Frameworks */ = {
@@ -390,7 +431,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				513BB6B71C2B355000F76409 /* LocationManager.swift in Sources */,
+				513BB6B41C2B2CA100F76409 /* NetworkManager.swift in Sources */,
 				51748CE81C2A28A600635581 /* ViewController.swift in Sources */,
+				5195E9701C2B451000EDAA4C /* MapViewController.swift in Sources */,
 				51748CE61C2A28A600635581 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
