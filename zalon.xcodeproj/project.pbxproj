@@ -12,11 +12,16 @@
 		51748CE61C2A28A600635581 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51748CE51C2A28A600635581 /* AppDelegate.swift */; };
 		51748CE81C2A28A600635581 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51748CE71C2A28A600635581 /* ViewController.swift */; };
 		51748CEB1C2A28A600635581 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51748CE91C2A28A600635581 /* Main.storyboard */; };
-		51748CED1C2A28A600635581 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51748CEC1C2A28A600635581 /* Assets.xcassets */; };
 		51748CF01C2A28A600635581 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51748CEE1C2A28A600635581 /* LaunchScreen.storyboard */; };
 		51748CFB1C2A28A600635581 /* zalonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51748CFA1C2A28A600635581 /* zalonTests.swift */; };
 		51748D061C2A28A600635581 /* zalonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51748D051C2A28A600635581 /* zalonUITests.swift */; };
 		5195E9701C2B451000EDAA4C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5195E96F1C2B451000EDAA4C /* MapViewController.swift */; };
+		519ACE2B1C2EA94D00B2E174 /* YelpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519ACE2A1C2EA94D00B2E174 /* YelpClient.swift */; };
+		51DDD3C31C36268300229D9E /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51DDD3C21C36268300229D9E /* images.xcassets */; };
+		51DDD3C61C36284500229D9E /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DDD3C51C36284500229D9E /* MenuViewController.swift */; };
+		51DDD3D11C366E1000229D9E /* AnimationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DDD3CE1C366E1000229D9E /* AnimationDelegate.swift */; };
+		51DDD3D21C366E1000229D9E /* CircularRevealAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DDD3CF1C366E1000229D9E /* CircularRevealAnimator.swift */; };
+		51DDD3D31C366E1000229D9E /* CircularRevealTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DDD3D01C366E1000229D9E /* CircularRevealTransitionAnimator.swift */; };
 		9C2E46E636FA2FF4FB0E1B1C /* Pods_zalonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4E008904807DE561ACF05C /* Pods_zalonTests.framework */; };
 		BE22E8E52DEC39DDCBE1E167 /* Pods_zalon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6362E05EAD1BD0DC740EAC7E /* Pods_zalon.framework */; };
 /* End PBXBuildFile section */
@@ -47,7 +52,6 @@
 		51748CE51C2A28A600635581 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51748CE71C2A28A600635581 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		51748CEA1C2A28A600635581 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		51748CEC1C2A28A600635581 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51748CEF1C2A28A600635581 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51748CF11C2A28A600635581 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51748CF61C2A28A600635581 /* zalonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zalonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +61,12 @@
 		51748D051C2A28A600635581 /* zalonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zalonUITests.swift; sourceTree = "<group>"; };
 		51748D071C2A28A600635581 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5195E96F1C2B451000EDAA4C /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = apps/map/MapViewController.swift; sourceTree = "<group>"; };
+		519ACE2A1C2EA94D00B2E174 /* YelpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YelpClient.swift; path = apps/yelp/YelpClient.swift; sourceTree = "<group>"; };
+		51DDD3C21C36268300229D9E /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = images.xcassets; path = resources/images.xcassets; sourceTree = "<group>"; };
+		51DDD3C51C36284500229D9E /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = apps/menu/MenuViewController.swift; sourceTree = "<group>"; };
+		51DDD3CE1C366E1000229D9E /* AnimationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimationDelegate.swift; path = apps/menu/AnimationDelegate.swift; sourceTree = "<group>"; };
+		51DDD3CF1C366E1000229D9E /* CircularRevealAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CircularRevealAnimator.swift; path = apps/menu/CircularRevealAnimator.swift; sourceTree = "<group>"; };
+		51DDD3D01C366E1000229D9E /* CircularRevealTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CircularRevealTransitionAnimator.swift; path = apps/menu/CircularRevealTransitionAnimator.swift; sourceTree = "<group>"; };
 		6362E05EAD1BD0DC740EAC7E /* Pods_zalon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zalon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67C08BA9EEC8B954617D95D0 /* Pods-zalon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zalon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-zalon/Pods-zalon.debug.xcconfig"; sourceTree = "<group>"; };
 		9A02C059352F32731596BBD3 /* Pods-zalonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zalonTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-zalonTests/Pods-zalonTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -131,13 +141,13 @@
 		51748CE41C2A28A600635581 /* zalon */ = {
 			isa = PBXGroup;
 			children = (
+				51DDD3C11C36263600229D9E /* resources */,
 				5195E96D1C2B429600EDAA4C /* apps */,
 				513BB6B51C2B353800F76409 /* location */,
 				513BB6B21C2B2BB900F76409 /* network */,
 				51748CE51C2A28A600635581 /* AppDelegate.swift */,
 				51748CE71C2A28A600635581 /* ViewController.swift */,
 				51748CE91C2A28A600635581 /* Main.storyboard */,
-				51748CEC1C2A28A600635581 /* Assets.xcassets */,
 				51748CEE1C2A28A600635581 /* LaunchScreen.storyboard */,
 				51748CF11C2A28A600635581 /* Info.plist */,
 			);
@@ -162,9 +172,19 @@
 			path = zalonUITests;
 			sourceTree = "<group>";
 		};
+		5184F1CF1C2B892B0007CB5F /* yelp */ = {
+			isa = PBXGroup;
+			children = (
+				519ACE2A1C2EA94D00B2E174 /* YelpClient.swift */,
+			);
+			name = yelp;
+			sourceTree = "<group>";
+		};
 		5195E96D1C2B429600EDAA4C /* apps */ = {
 			isa = PBXGroup;
 			children = (
+				51DDD3C41C36281800229D9E /* menu */,
+				5184F1CF1C2B892B0007CB5F /* yelp */,
 				5195E96E1C2B42A300EDAA4C /* map */,
 			);
 			name = apps;
@@ -176,6 +196,25 @@
 				5195E96F1C2B451000EDAA4C /* MapViewController.swift */,
 			);
 			name = map;
+			sourceTree = "<group>";
+		};
+		51DDD3C11C36263600229D9E /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				51DDD3C21C36268300229D9E /* images.xcassets */,
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
+		51DDD3C41C36281800229D9E /* menu */ = {
+			isa = PBXGroup;
+			children = (
+				51DDD3CE1C366E1000229D9E /* AnimationDelegate.swift */,
+				51DDD3CF1C366E1000229D9E /* CircularRevealAnimator.swift */,
+				51DDD3D01C366E1000229D9E /* CircularRevealTransitionAnimator.swift */,
+				51DDD3C51C36284500229D9E /* MenuViewController.swift */,
+			);
+			name = menu;
 			sourceTree = "<group>";
 		};
 		A5D0E50B2FD6759C0A78AFCD /* Frameworks */ = {
@@ -312,7 +351,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				51748CF01C2A28A600635581 /* LaunchScreen.storyboard in Resources */,
-				51748CED1C2A28A600635581 /* Assets.xcassets in Resources */,
+				51DDD3C31C36268300229D9E /* images.xcassets in Resources */,
 				51748CEB1C2A28A600635581 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,8 +472,13 @@
 			files = (
 				513BB6B71C2B355000F76409 /* LocationManager.swift in Sources */,
 				513BB6B41C2B2CA100F76409 /* NetworkManager.swift in Sources */,
+				51DDD3D11C366E1000229D9E /* AnimationDelegate.swift in Sources */,
 				51748CE81C2A28A600635581 /* ViewController.swift in Sources */,
+				51DDD3D31C366E1000229D9E /* CircularRevealTransitionAnimator.swift in Sources */,
+				51DDD3C61C36284500229D9E /* MenuViewController.swift in Sources */,
 				5195E9701C2B451000EDAA4C /* MapViewController.swift in Sources */,
+				519ACE2B1C2EA94D00B2E174 /* YelpClient.swift in Sources */,
+				51DDD3D21C366E1000229D9E /* CircularRevealAnimator.swift in Sources */,
 				51748CE61C2A28A600635581 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

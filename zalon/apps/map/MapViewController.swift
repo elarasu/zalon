@@ -8,6 +8,9 @@
 
 import Foundation
 import MapKit
+import Alamofire
+import SwiftyJSON
+import ObjectMapper
 
 class ServiceAnnotation: NSObject, MKAnnotation {
     var coordinate: CLLocationCoordinate2D
@@ -21,6 +24,37 @@ class ServiceAnnotation: NSObject, MKAnnotation {
     }
 }
 
+class WeatherResponse: Mappable {
+    var location: String?
+    var threeDayForecast: [Forecast]?
+    
+    required init?(_ map: Map){
+        
+    }
+    
+    func mapping(map: Map) {
+        location <- map["location"]
+        threeDayForecast <- map["three_day_forecast"]
+    }
+}
+
+class Forecast: Mappable {
+    var day: String?
+    var temperature: Int?
+    var conditions: String?
+    
+    required init?(_ map: Map){
+        
+    }
+    
+    func mapping(map: Map) {
+        day <- map["day"]
+        temperature <- map["temperature"]
+        conditions <- map["conditions"]
+    }
+}
+
+
 class MapViewController: UIViewController, MKMapViewDelegate {
     
     @IBOutlet var _map: MKMapView!
@@ -31,6 +65,44 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         initMap()
+        let URL = "https://raw.githubusercontent.com/tristanhimmelman/AlamofireObjectMapper/d8bb95982be8a11a2308e779bb9a9707ebe42ede/sample_json"
+        Alamofire.request(.GET, URL).validate().responseJSON { response in
+            switch response.result {
+            case .Success:
+                if let value = response.result.value {
+                    let json = JSON(value)
+                    let wr = Mapper<WeatherResponse>().map(value);
+                    print("Object: \(wr)")
+                    print("JSON: \(json)")
+                }
+            case .Failure(let error):
+                print(error)
+            }
+        }
+        
+        let parameters = ["ll": "37.788022,-122.399797", "category_filter": "beautysvc", "radius_filter": "100", "sort": "0", "term":"salon"]
+        /*
+        let client = YelpClient();
+        client.searchPlacesWithParameters(parameters, successSearch: { (data, response) -> Void in
+            print(NSString(data: data, encoding: NSUTF8StringEncoding))
+            }, failureSearch: { (error) -> Void in
+                print(error)
+        })
+        */
+        YelpRouter.init()
+        Alamofire.request(YelpRouter.Search(parameters)).validate().responseJSON { response in
+            switch response.result {
+            case .Success:
+                if let value = response.result.value {
+                    let json = JSON(value)
+                    print("JSON: \(json)")
+                }
+            case .Failure(let error):
+                print(error)
+            }
+        }
+
+
     }
 
     // init map view

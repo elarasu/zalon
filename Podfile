@@ -6,13 +6,13 @@ def import_pods
 
     # networking
     pod 'Alamofire'
+    pod 'OAuthSwift'
 
     # database
     pod 'RealmSwift'
 
     # Object mapper
     pod 'ObjectMapper'
-    pod 'AlamofireObjectMapper'
 
     # core libs
     pod 'XCGLogger'
